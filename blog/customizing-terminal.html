@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <title>customizing the terminal ~ kisestu's journal</title>
+    
+    <!-- meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google" content="nositelinkssearchbox">
+    <meta name="description" content="">
+    
+    <!-- external -->
+    <link rel="icon" sizes="192x192" href="https://media.discordapp.net/attachments/772889968838049802/810193167399911434/image0.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css">
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- javascript -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+  </head>
+  
+  <body>
+    
+    <h4>Who doesn't love customization?</h4>
+    <p>My <u>bashrc</u> file looks something like:</p>
+    <pre><code class="language-bash">export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+export PAGER=less
+umask 022
+
+for script in /etc/profile.d/*.sh ; do
+        if [ -r $script ] ; then
+                . $script
+        fi
+done
+
+shopt -s histappend
+shopt -s histverify
+export HISTCONTROL=ignoreboth
+
+PROMPT_DIRTRIM=2
+PS1='\[\e[0;33m\]\t \[\e[0m\] \[\e[0;36m\]\w \[\e[0m\]'
+PS2='\[\033[00;37m\]> '
+test -f ~/.bash_aliases && . $_
+test -f ~/.profile && . $_</pre></code>
+
+    <p>Some of the <u>bash aliases</u> that I use:</p>
+    <pre><code class="language-bash">alias nano='nano -m'
+alias rf='rm -rf'
+alias la='ls -a'
+alias ll='ls -lh'
+alias ping='ping -c 5'
+alias ports='netstat -tulanp'
+alias header='curl -I'</pre></code>
+
+  <p>I also found this neat tutorial on <u>colorization of CLI outputs</u> on the <a href="https://wiki.archlinux.org/index.php/Color_output_in_console#bash">Arch Linux wiki</a>.</p>
+  </body>
+  
+</html>
