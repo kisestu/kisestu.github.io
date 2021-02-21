@@ -40,10 +40,12 @@ footer { padding: 25px; text-align: center;}
   background-repeat: no-repeat;
   background-color: #000000;
   color: #ddd;
+  max-width: 100%
 }
 
 #image-bg { background-image: url("https://images-ext-2.discordapp.net/external/5KWG7-dy7wAXbhNFgdepRPfpllgQ4FQDV97xNlpMZrI/https/media.discordapp.net/attachments/635625973764849684/782329873145528400/twilight.jpg");
   background-repeat: no-repeat;
   background-color: #000000;
   color: #ddd;
+  max-width: 100%
 }
