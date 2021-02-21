@@ -36,16 +36,14 @@ blockquote { border-left: 1px solid #999; color: #222; padding-left: 20px; font-
 
 footer { padding: 25px; text-align: center;}
 
-@media (prefers-color-scheme: dark) { body { background-color:#101010; color: #ddd; }
-h1, h2, h3, h4, h5, h6, strong, b { color: #eee; }
+#index-bg { background-image: url("https://steamuserimages-a.akamaihd.net/ugc/1022823759368616012/877521E9F3AA7F8AFA2936C36D4E6C87C84D375C/");
+  background-repeat: no-repeat;
+  background-color: #000000;
+  color: #ddd;
+}
 
-a { color: #8cc2dd; }
-
-code { background-color: #777; }
-
-pre code { color: #ddd; }
-
-blockquote { color: #ccc; }
-
-body:hover { background-image: url("https://images-ext-2.discordapp.net/external/5KWG7-dy7wAXbhNFgdepRPfpllgQ4FQDV97xNlpMZrI/https/media.discordapp.net/attachments/635625973764849684/782329873145528400/twilight.jpg"); }
+#image-bg { background-image: url("https://images-ext-2.discordapp.net/external/5KWG7-dy7wAXbhNFgdepRPfpllgQ4FQDV97xNlpMZrI/https/media.discordapp.net/attachments/635625973764849684/782329873145528400/twilight.jpg");
+  background-repeat: no-repeat;
+  background-color: #000000;
+  color: #ddd;
 }
